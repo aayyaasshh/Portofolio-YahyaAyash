@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahya Ayash Abdul Aziz — CV & Porto</title>
+  <meta name="description" content="Portfolio Yahya Ayash — Web Developer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 🔥 Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Yahya Ayash Abdul Aziz</div>
+      <nav class="nav" id="nav">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#porto">Porto</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 🔥 Hero -->
+    <section id="hero" class="hero container">
+      <img src="images/profile.jpg" alt="Foto Yahya Ayash" class="avatar" />
+      <div class="hero-text">
+        <h1>Hello I'm </h1>
+        <h1><span class="accent">Yahya Ayash Abdul Aziz</span></h1>
+        <p class="role">Web Developer</p>
+        <p class="lead">solve challenges using code</p>
+        <div class="actions">
+          <a href="#about" class="btn">About me</a>
+          <a href="assets/CV-Yahya-Ayash.pdf" download class="btn ghost">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔥 About -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <h3>I'm a Web developer</h3>
+      <p>I am an experienced developer using frameworks like Laravel and React, focusing more on the external appearance.</p>
+      <div class="actions">
+        <a href="#porto" class="btn">View Porto</a>
+      </div>
+    </section>
+
+    <!-- 🔥 Porto -->
+    <section id="porto" class="section container">
+      <h2>Portofolio</h2>
+      <h1>My Works</h1>
+      <p>A place where I've created projects that showcase my experience in web development.</p>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="images/project1.png" alt="Project 1 screenshot" />
+          <h3>Sisfo Sarpras</h3>
+          <p>Facilities and Infrastructure Information System. This is an information system designed to manage and monitor data related to facilities and infrastructure.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/project2.png" alt="Project 2 screenshot" />
+          <h3>Starbhakmart</h3>
+          <p>Starbhakmart is a mobile-based e-commerce application developed using Flutter to support digital shopping experiences in school environments. The app allows users to browse, search, and purchase.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/project3.png" alt="Project 3 screenshot" />
+          <h3>Portofolio</h3>
+          <p>This is a Portfolio Website project that I built using Laravel,The website is designed to showcase my personal profile, experiences, skills, and the projects I have worked on.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 🔥 Skills -->
+    <section id="skills" class="section container">
+      <h2>My Skills</h2>
+      <h1>I Have Skills Regulary</h1>
+      <p>i constantly learn new tools to sharpen my developer skills</p>
+      <ul class="skills-list">
+        <li>React js</li>
+        <li>Laravel</li>
+        <li>Mysql</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <!-- 🔥 Contact -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <!-- form -->
+        <div class="contact-form">
+          <h3>Don't be shy</h3>
+          <h1>Drop Me a Line</h1>
+          <form action="https://formspree.io/f/xkgvlpgl" method="POST">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Submit Message</button>
+          </form>
+        </div>
+        <!-- info -->
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <div>
+              <h4>Address</h4>
+              <p>Depok, Indonesia</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:yahyaayashabdulaziz@gmail.com">yahyaayashabdulaziz11@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+62832728934">+62 8311 3260 902</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔥 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Yahya Ayash Abdul Aziz — dibuat dengan ♥</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
