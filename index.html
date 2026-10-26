@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Yahya Ayash Abdul Aziz — CV & Porto</title>
   <meta name="description" content="Portfolio Yahya Ayash — Web Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,33 +28,36 @@
   <main>
     <!-- 🔥 Hero -->
     <section id="hero" class="hero container">
-      <img src="images/profile.jpg" alt="Foto Yahya Ayash" class="avatar" />
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Foto Yahya Ayash" class="avatar" />
+      </div>
       <div class="hero-text">
-        <h1>Hello I'm </h1>
-        <h1><span class="accent">Yahya Ayash Abdul Aziz</span></h1>
-        <p class="role">Web Developer</p>
-        <p class="lead">solve challenges using code</p>
+        <span class="role">Web Developer</span>
+        <h1>Hello I'm <span class="accent">Yahya Ayash</span></h1>
+        <p class="lead">Passionate developer focused on building beautiful, functional, and user-centric web experiences. Solving challenges using clean and efficient code.</p>
         <div class="actions">
-          <a href="#contact" class="btn">Contact</a>
-          <a href="/assets/cv-yahya-ayash.pdf" download class="btn ghost">Download CV</a>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="/assets/cv-yahya-ayash.pdf" download class="btn btn-ghost">Download CV</a>
         </div>
       </div>
     </section>
 
     <!-- 🔥 About -->
-    <section id="about" class="section container about-section">
-      <h2>About Me</h2>
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-subtitle">Discovery</span>
+        <h2>About Me</h2>
+      </div>
       <div class="about-content">
-        <!-- Gambar -->
         <div class="about-image">
           <img src="images/photo.jpg" alt="Foto Yahya Ayash" />
         </div>
-        <!-- Teks -->
         <div class="about-text">
-          <h3>I'm a Web Developer</h3>
-          <p>I am an experienced developer using frameworks like Laravel and React, focusing more on the external appearance.</p>
-          <div class="actions">
-            <a href="#porto" class="btn">View Porto</a>
+          <h3>I'm a Dedicated Web Developer</h3>
+          <p>I am an experienced developer specializing in building robust web applications using frameworks like Laravel and React. My focus is on creating seamless user experiences through intuitive design and efficient backend logic.</p>
+          <p>I believe that every line of code should serve a purpose and contribute to a better digital environment. I'm always eager to learn new technologies and stay ahead of industry trends.</p>
+          <div class="actions" style="justify-content: flex-start;">
+            <a href="#porto" class="btn btn-primary">View My Work</a>
           </div>
         </div>
       </div>
@@ -59,66 +65,114 @@
 
     <!-- 🔥 Porto -->
     <section id="porto" class="section container">
-      <h2>Portofolio</h2>
-      <h1>My Works</h1>
-      <p>A place where I've created projects that showcase my experience in web development.</p>
+      <div class="section-header">
+        <span class="section-subtitle">Portfolio</span>
+        <h2>Selected Works</h2>
+        <p>A collection of projects that showcase my skills and experience in web development.</p>
+      </div>
       <div class="projects-grid">
         <article class="card">
-          <img src="images/project1.png" alt="Project 1 screenshot" />
-          <h3>Sisfo Sarpras</h3>
-          <p>Facilities and Infrastructure Information System. This is an information system designed to manage and monitor data related to facilities and infrastructure.</p>
+          <div class="card-image">
+            <img src="images/project1.png" alt="Project 1 screenshot" />
+            <div class="card-overlay">
+              <a href="https://github.com/aayyaasshh" target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <h3>Sisfo Sarpras</h3>
+            <p>A comprehensive Facilities and Infrastructure Information System designed to streamline asset management and monitoring.</p>
+          </div>
         </article>
 
         <article class="card">
-          <img src="images/project2.png" alt="Project 2 screenshot" />
-          <h3>Starbhakmart</h3>
-          <p>Starbhakmart is a mobile-based e-commerce application developed using Flutter to support digital shopping experiences in school environments. The app allows users to browse, search, and purchase.</p>
+          <div class="card-image">
+            <img src="images/project2.png" alt="Project 2 screenshot" />
+            <div class="card-overlay">
+              <a href="https://github.com/aayyaasshh" target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Dart</span>
+            </div>
+            <h3>Starbhakmart</h3>
+            <p>A mobile-based e-commerce application built with Flutter, providing a seamless shopping experience for school communities.</p>
+          </div>
         </article>
 
         <article class="card">
-          <img src="images/project3.png" alt="Project 3 screenshot" />
-          <h3>Portofolio</h3>
-          <p>This is a Portfolio Website project that I built using Laravel. The website is designed to showcase my personal profile, experiences, skills, and the projects I have worked on.</p>
+          <div class="card-image">
+            <img src="images/project3.png" alt="Project 3 screenshot" />
+            <div class="card-overlay">
+              <a href="https://github.com/aayyaasshh" target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p>A custom-built portfolio website using modern web technologies to showcase professional identity and technical prowess.</p>
+          </div>
         </article>
       </div>
     </section>
 
     <!-- 🔥 Skills -->
     <section id="skills" class="section container">
-      <h2>My Skills</h2>
-      <h1>I Have Skills Regulary</h1>
-      <p>i constantly learn new tools to sharpen my developer skills</p>
+      <div class="section-header">
+        <span class="section-subtitle">Expertise</span>
+        <h2>Technical Skills</h2>
+        <p>Constantly evolving and mastering the latest tools in the web development ecosystem.</p>
+      </div>
       <ul class="skills-list">
-        <li>React js</li>
+        <li>React.js</li>
         <li>Laravel</li>
-        <li>Mysql</li>
-        <li>Css</li>
-        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>CSS3 / Tailwind</li>
+        <li>JavaScript (ES6+)</li>
         <li>Python</li>
       </ul>
     </section>
 
     <!-- 🔥 Contact -->
     <section id="contact" class="section container">
-      <h2>Contact</h2>
+      <div class="section-header">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2>Let's Work Together</h2>
+      </div>
       <div class="contact-wrapper">
-        <!-- form -->
         <div class="contact-form">
-          <h3>Don't be shy</h3>
-          <h1>Drop Me a Line</h1>
           <form action="https://formspree.io/f/xkgvlpgl" method="POST">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Submit Message</button>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help you?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="border: none; width: 100%; justify-content: center;">Send Message</button>
           </form>
         </div>
-        <!-- info -->
         <div class="contact-info">
           <div class="info-item">
             <span class="icon">📍</span>
             <div>
-              <h4>Address</h4>
+              <h4>Location</h4>
               <p>Depok, Indonesia</p>
             </div>
           </div>
@@ -126,14 +180,14 @@
             <span class="icon">✉️</span>
             <div>
               <h4>Email</h4>
-              <p><a href="mailto:yahyaayashabdulaziz@gmail.com">yahyaayashabdulaziz11@gmail.com</a></p>
+              <p><a href="mailto:yahyaayashabdulaziz11@gmail.com">yahyaayashabdulaziz11@gmail.com</a></p>
             </div>
           </div>
           <div class="info-item">
             <span class="icon">📞</span>
             <div>
-              <h4>Phone</h4>
-              <p><a href="tel:+62832728934">+62 8311 3260 902</a></p>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/6283113260902">+62 831 1326 0902</a></p>
             </div>
           </div>
         </div>
